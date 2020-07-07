@@ -1,9 +1,9 @@
-
+import express from 'express'
 import SuggestionsApi from '../apis/suggestionsApi.js'
 
 function getSuggestionsRouter() {
 
-    const router = expression.Router()
+    const router = express.Router()
 
     const suggestionsApi = new SuggestionsApi()
 

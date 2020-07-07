@@ -1,7 +1,10 @@
-import ProductsDAOFactory from "../data/product/daoFactory"
-import UsersDAOFactory from "../data/user/daoFactory"
+import ProductsDAOFactory from "../data/product/daoFactory.js"
+import UsersDAOFactory from "../data/user/daoFactory.js"
 import SuggestionsGet  from "../features/suggestions/SuggestionsGet.js"
-import SuggestionsNotificationSender from "../features/suggestions/SuggestionsNotificationSender.js"
+import SuggestionsNotificationSender from "../notification/SuggestionsNotificationSender.js"
+import TwilioSender from "../notification/TwilioSender.js"
+import config from "../../../config.js"
+
 
 class SuggestionsApi{
     constructor(){
@@ -16,3 +19,5 @@ class SuggestionsApi{
         return suggestions
     }
 }
+
+export default SuggestionsApi

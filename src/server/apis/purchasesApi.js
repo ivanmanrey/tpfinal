@@ -1,6 +1,6 @@
 import PurchasesDAOFactory from "../data/purchase/daoFactory.js"
 import config from "../../../config.js"
-import PurchaseNotificationSender from "../features/purchases/PurchaseNotificationSender.js"
+import PurchaseNotificationSender from "../notification/PurchaseNotificationSender.js"
 import PurchaseAdd from "../features/purchases/PurchaseAdd.js"
 import PdfCreator from "../pdf/PdfCreator.js"
 import PurchasePdfCreator from "../pdf/PurchasePdfCreator.js"

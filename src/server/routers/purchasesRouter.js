@@ -16,6 +16,16 @@ function getPurchasesRouter(){
         }
     })
 
+    router.get('/:id', async (req, res) => {
+        try {
+            const queryParams = new Map(Object.entries(req.query))
+            const purchases = await purchasesApi.get(queryParams)
+            res.json(purchases)
+        } catch (error) {
+            res.status(error.status).json(error)
+        }
+    })
+
     router.post('/', async (req, res) => {
         const purchase = req. body
 
